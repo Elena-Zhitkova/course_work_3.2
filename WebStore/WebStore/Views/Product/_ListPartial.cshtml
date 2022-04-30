@@ -1,0 +1,5 @@
+﻿@model ListViewModel<WebStore.Entities.Product>
+@foreach (var item in Model)
+{
+    <partial name="_ListItemPartial" model="@item" />
+}

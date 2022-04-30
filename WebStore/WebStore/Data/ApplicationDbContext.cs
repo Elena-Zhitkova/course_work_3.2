@@ -13,5 +13,8 @@ namespace WebStore.Data
             : base(options)
         {
         }
+        public DbSet<Product> Product { get; set; }
+        public DbSet<ProductBrand> ProductBrand { get; set; }
+        public DbSet<ProductCategory> ProductCategory { get; set; }
     }
 }

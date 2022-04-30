@@ -8,5 +8,6 @@ namespace WebStore.Entities
 {
     public class ApplicationUser: IdentityUser
     {
+        public byte[] AvatarImage { get; set; }
     }
 }
