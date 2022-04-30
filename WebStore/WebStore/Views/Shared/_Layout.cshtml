@@ -14,8 +14,9 @@
             <!-- Панель навигации -->
             <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-to">
                 <!-- меню сайта -->
-                <a class="navbar-brand" asp-action="Index" asp-
-                   controller="Home">WebLabsV06</a>
+                <a class="navbar-brand" Controller="Home", Action="Index", Text="Главная страница">
+                    <img src="logo.png" width="120" height="60" alt="">
+                </a>
 
                 <div class="navbar-nav">
                     @await Component.InvokeAsync("Menu")

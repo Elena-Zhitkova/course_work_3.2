@@ -33,21 +33,8 @@ namespace WebStore.Controllers
                 .CreateReadStream(), "image/...");
 
             }
-        }
-        public async Task<FileResult> GetAvatar(string path)
-        {
-            var user = await _userManager.GetUserAsync(User);
-            if (user.AvatarImage != null)
-                return File(user.AvatarImage, "image/...");
-            else
-            {
-                var avatarPath = path;
-                return File(_env.WebRootFileProvider
-                .GetFileInfo(avatarPath)
 
-                .CreateReadStream(), "image/...");
 
-            }
         }
     }
 }

@@ -11,9 +11,9 @@ namespace WebStore.Components
     {
         private List<MenuItem> _menuItems = new List<MenuItem>
             {
-            new MenuItem{ Controller="Home", Action="Index", Text="Lab 2"},
+            new MenuItem{ Controller="Home", Action="Index", Text="Главная страница"},
             new MenuItem{ Controller="Product", Action="Index",
-            Text="Каталог"},
+            Text="Каталог товаров"},
             new MenuItem{ IsPage=true, Area="Admin", Page="/Index",
             Text="Администрирование"}
             };
