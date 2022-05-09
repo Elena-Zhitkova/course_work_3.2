@@ -16,5 +16,6 @@ namespace WebStore.Data
         public DbSet<Product> Product { get; set; }
         public DbSet<ProductBrand> ProductBrand { get; set; }
         public DbSet<ProductCategory> ProductCategory { get; set; }
+        public DbSet<WebStore.Entities.Order> Order { get; set; }
     }
 }

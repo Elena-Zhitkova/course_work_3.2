@@ -2,9 +2,16 @@
 @using WebStore.Entities;
 @inject SignInManager<ApplicationUser> signInManager
 <!-- Информация пользователя -->
-
 @if (signInManager.IsSignedIn(User))
 {
+    @if(User.IsInRole("admin"))
+    {
+        <a class="nav-item nav-link "
+           asp-area= "Admin"
+           asp-page="/Index">
+            Администрирование
+        </a>
+    }
     @await Component.InvokeAsync("Cart")
     <div class="dropdown ml-4 nav-color">
         <div class="dropdown-toggle" id="dropdownMenuButton"

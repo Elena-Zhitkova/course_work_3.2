@@ -1,7 +1,7 @@
 ﻿@model ListViewModel<WebStore.Entities.Product>
 
 @{
-    ViewData["Title"] = "Меню";
+    ViewData["Title"] = "Каталог товаров";
 
     var categories = ViewData["Groups"] as IEnumerable<WebStore.Entities.ProductCategory>;
     int currentGroup = (int)ViewData["CurrentGroup"];

@@ -54,9 +54,9 @@ namespace WebStore.Service
             base.RemoveFromCart(id);
             Session?.Set<CartService>(sessionKey, this);
         }
-        public override void ClearAll()
+        public override void RemoveFromCart()
         {
-            base.ClearAll();
+            base.RemoveFromCart();
             Session?.Set<CartService>(sessionKey, this);
         }
     }

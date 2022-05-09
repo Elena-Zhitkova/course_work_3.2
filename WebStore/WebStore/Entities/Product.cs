@@ -13,6 +13,8 @@ namespace WebStore.Entities
         public string Image { get; set; }
         public int Price { get; set; }
 
+        public int Quantity { get; set; }
+
         // навигационные свойства
         public int ProductBrandId { get; set; }
         public ProductBrand Brand { get; set; }

@@ -13,9 +13,7 @@ namespace WebStore.Components
             {
             new MenuItem{ Controller="Home", Action="Index", Text="Главная страница"},
             new MenuItem{ Controller="Product", Action="Index",
-            Text="Каталог товаров"},
-            new MenuItem{ IsPage=true, Area="Admin", Page="/Index",
-            Text="Администрирование"}
+            Text="Каталог товаров"}
             };
 
         public IViewComponentResult Invoke()
@@ -23,7 +21,8 @@ namespace WebStore.Components
             //Получение значений сегментов маршрута
             var controller = ViewContext.RouteData.Values["controller"];
             var page = ViewContext.RouteData.Values["page"];
-            var area = ViewContext.RouteData.Values["area"];
+            var a = ViewContext.RouteData.Values;
+            var area = ViewContext.RouteData.DataTokens["area"];
             foreach (var item in _menuItems)
             {
                 // Название контроллера совпадает?

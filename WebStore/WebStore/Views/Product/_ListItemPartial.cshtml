@@ -20,6 +20,27 @@
             request.QueryString.ToUriComponent();
         }
         <!--Разметка кнопки добавления в корзину-->
+        @if (@Model.Quantity == 0)
+        {
+            <p class="mt-2">
+                <a class="btn btn-block">
+                    <i class="fa fa-shopping-cart"></i> Нет в наличии
+                </a>
+            </p>
+        }
+        else if (@Model.Quantity <= 5)
+        {
+            <p class="mt-2">
+                <a class="btn btn-warning">
+                    <i class="fa fa-shopping-cart"></i> Успейте купить!
+                </a>
+                <a class="btn btn-block">
+                    <i class="fa"></i> Товара в наличии: @Model.Quantity
+                </a>
+            </p>
+        } 
+        else 
+        {
         <p class="mt-2">
             <a asp-action="Add"
                asp-controller="Cart"
@@ -29,6 +50,8 @@
                 <i class="fa fa-shopping-cart"></i> В корзину
             </a>
         </p>
+        }
+
     </div>
 </div>
 

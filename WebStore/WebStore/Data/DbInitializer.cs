@@ -87,26 +87,26 @@ namespace WebStore.Data
                 context.Product.AddRange(
                 new List<Product>
                 {
-                    new Product {ProductName = "Твидовое платье Gardenia", ProductBrandId=1, ProductCategoryId=1,
-                    Price=1250, Image="1411150896_RLLDTH_1.jpg", Description="Размер 26. Цвет: кремовый, красный, синий."},
+                    new Product {ProductName = "Твидовое платье Gardeniaaaa", ProductBrandId=1, ProductCategoryId=1,
+                    Price=1250, Image="1411150896_RLLDTH_1.jpg", Description="Размер 26. Цвет: кремовый, красный, синий.", Quantity=24},
                     new Product {ProductName = "Платье-фонарь с вышивкой Флоренсии", ProductBrandId=4, ProductCategoryId=1,
-                    Price=1250, Image="1411297610_RLLDTH_1.jpg", Description="52% нейлон, 48% полиэстер"},
+                    Price=1250, Image="1411297610_RLLDTH_1.jpg", Description="52% нейлон, 48% полиэстер", Quantity=24},
                     new Product {ProductName = "Замшевые мокасины Fausto, защищенные от непогоды", ProductBrandId=5, ProductCategoryId=2,
-                    Price=1250, Image="1312073064_RLLDTH_1.jpg", Description="Размер 7.5."},
+                    Price=1250, Image="1312073064_RLLDTH_1.jpg", Description="Размер 7.5.", Quantity=24},
                     new Product {ProductName = "Твидовое платье Gardenia2", ProductBrandId=1, ProductCategoryId=1,
-                    Price=1250, Image="1411150896_RLLDTH_1.jpg", Description="Размер 26. Цвет: кремовый, красный, синий."},
+                    Price=1250, Image="1411150896_RLLDTH_1.jpg", Description="Размер 26. Цвет: кремовый, красный, синий.", Quantity=24},
                     new Product {ProductName = "Твидовое платье Gardenia3", ProductBrandId=1, ProductCategoryId=1,
-                    Price=1250, Image="1411150896_RLLDTH_1.jpg", Description="Размер 26. Цвет: кремовый, красный, синий."},
+                    Price=1250, Image="1411150896_RLLDTH_1.jpg", Description="Размер 26. Цвет: кремовый, красный, синий.", Quantity=24},
                     new Product {ProductName = "Твидовое платье Gardenia", ProductBrandId=1, ProductCategoryId=1,
-                    Price=1250, Image="1411150896_RLLDTH_1.jpg", Description="Размер 26. Цвет: кремовый, красный, синий."},
+                    Price=1250, Image="1411150896_RLLDTH_1.jpg", Description="Размер 26. Цвет: кремовый, красный, синий.", Quantity=24},
                     new Product {ProductName = "Платье-фонарь с вышивкой Флоренсии", ProductBrandId=4, ProductCategoryId=1,
-                    Price=1250, Image="1411297610_RLLDTH_1.jpg", Description="52% нейлон, 48% полиэстер"},
+                    Price=1250, Image="1411297610_RLLDTH_1.jpg", Description="52% нейлон, 48% полиэстер", Quantity=24},
                     new Product {ProductName = "Замшевые мокасины Fausto, защищенные от непогоды", ProductBrandId=5, ProductCategoryId=2,
-                    Price=1250, Image="1312073064_RLLDTH_1.jpg", Description="Размер 7.5."},
+                    Price=1250, Image="1312073064_RLLDTH_1.jpg", Description="Размер 7.5.", Quantity=24},
                     new Product {ProductName = "Твидовое платье Gardenia2", ProductBrandId=1, ProductCategoryId=1,
-                    Price=1250, Image="1411150896_RLLDTH_1.jpg", Description="Размер 26. Цвет: кремовый, красный, синий."},
+                    Price=1250, Image="1411150896_RLLDTH_1.jpg", Description="Размер 26. Цвет: кремовый, красный, синий.", Quantity=24},
                     new Product {ProductName = "Твидовое платье Gardenia3", ProductBrandId=1, ProductCategoryId=1,
-                    Price=1250, Image="1411150896_RLLDTH_1.jpg", Description="Размер 26. Цвет: кремовый, красный, синий."}
+                    Price=1250, Image="1411150896_RLLDTH_1.jpg", Description="Размер 26. Цвет: кремовый, красный, синий.", Quantity=24}
                 });
                 await context.SaveChangesAsync();
             }

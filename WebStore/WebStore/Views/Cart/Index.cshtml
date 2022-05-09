@@ -9,9 +9,11 @@
             <th></th>
             <th></th>
             <th>
-                @Html.DisplayNameFor(model => model.Quantity)
+                Количество
             </th>
-            <th></th>
+            <th>
+                Стоимость
+            </th>
         </tr>
     </thead>
     <tbody>
@@ -29,6 +31,9 @@
                     @Html.DisplayFor(modelItem => item.Quantity)
                 </td>
                 <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
                     <a asp-controller="Cart"
                        asp-action="Delete"
                        asp-route-id="@item.Product.ProductId"
@@ -41,6 +46,10 @@
 
     </tbody>
     <div class="form-group">
-        <button type="submit" class="btn btn-dark">Мысленно купить</button>
+        <a class="btn btn-dark" asp-controller="Order" asp-action="Index"> Мысленно купить </a>
+        <!--
+            
+        <button type="submit" class="btn btn-dark" asp-controller="Order" asp-action="Index">Мысленно купить</button>
+        -->
     </div>
 </table>

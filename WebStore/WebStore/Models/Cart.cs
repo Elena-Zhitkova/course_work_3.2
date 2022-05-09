@@ -52,6 +52,7 @@ namespace WebStore.Models
                 Items.Add(product.ProductId, new CartItem
                 {
                     Product = product,
+                    Price = product.Price,
                     Quantity = 1
                 });
 
@@ -67,7 +68,7 @@ namespace WebStore.Models
         /// <summary>
         /// Очистить корзину
         /// </summary>
-        public virtual void ClearAll()
+        public virtual void RemoveFromCart()
         {
             Items.Clear();
         }
@@ -77,5 +78,6 @@ namespace WebStore.Models
     {
         public Product Product { get; set; }
         public int Quantity { get; set; }
+        public int Price { get; set; }
     }
 }
